@@ -27,13 +27,13 @@
 
     <!-- other_colors -->
     <color name="holo_blue_bright">#ff00ddff</color>
-    <color name="blue_light">#22a0dd</color>
-    <color name="blue_dark">#0e79ad</color>
+    <color name="blue_light">#0ea0db</color> <!-- Default state -->
+    <color name="blue_dark">#1081af</color>  <!-- Pressed state -->
     <color name="gray">#404040</color>
     <color name="gray_edit">#c7c7cc</color>
     <color name="gray_edit_pressed">#96c7c7cc</color>
-    <color name="green">#42be9c</color>
-    <color name="green_dark">#09866d</color>
+    <color name="green">#ee8942</color> <!-- Default State -->
+    <color name="green_dark">#c27239</color> <!-- Pressed state -->
     <color name="red_delete">#f31c24</color>
     <color name="red_discount">#f31c24</color>
     <color name="red_delete_pressed">#96f31c24</color>
