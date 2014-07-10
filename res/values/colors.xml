@@ -56,7 +56,7 @@
     <color name="shipment_review_place_order">#333333</color>
     <color name="dialog_transparent">#aa000000</color>
     <color name="image_upload_soc_select">#595d66</color>
-    <color name="country_drop_down">#2277d4</color>
+    <color name="country_drop_down">#0ea0db</color>
     <!-- Old Green #1abc9c -->
 
 </resources>
