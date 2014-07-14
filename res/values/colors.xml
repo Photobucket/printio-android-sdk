@@ -30,19 +30,19 @@
 
     <!-- other_colors -->
     <color name="holo_blue_bright">#00DDFF</color>
-    <color name="blue_light">#22A0DD</color>
-    <color name="blue_dark">#0E79AD</color>
+    <color name="blue_light">#0ea0db</color> <!-- Default state -->
+    <color name="blue_dark">#1081af</color>  <!-- Pressed state -->
     <color name="gray">#404040</color>
     <color name="gray_edit">#C7C7CC</color>
     <color name="gray_edit_pressed">#96C7C7CC</color>
-    <color name="green">#42BE9C</color>
-    <color name="green_dark">#09866D</color>
-    <color name="red_delete">#F31C24</color>
-    <color name="red_discount">#F31C24</color>
-    <color name="red_delete_pressed">#96F31C24</color>
-    <color name="orange">#D94217</color>
-    <color name="purple">#646AA6</color>
-    <color name="white">#FFFFFF</color>
+    <color name="green">#ee8942</color> <!-- Default State -->
+    <color name="green_dark">#c27239</color> <!-- Pressed state -->
+    <color name="red_delete">#f31c24</color>
+    <color name="red_discount">#f31c24</color>
+    <color name="red_delete_pressed">#96f31c24</color>
+    <color name="orange">#d94217</color>
+    <color name="purple">#646aa6</color>
+    <color name="white">#ffffff</color>
     <color name="overlay_translucent">#80000000</color>
     <color name="promo_code_background">#F3F3F3</color>
     <color name="product_details_layout_shipping">#22A0DD</color>
@@ -56,9 +56,9 @@
     <color name="shipment_review_first_container">#EDEDED</color>
     <color name="shipment_review_second_container">#EDEDED</color>
     <color name="shipment_review_place_order">#333333</color>
-    <color name="dialog_transparent">#AA000000</color>
-    <color name="image_upload_soc_select">#595D66</color>
-    <color name="country_drop_down">#2277D4</color>
-    <!-- Old Green #1ABC9C -->
+    <color name="dialog_transparent">#aa000000</color>
+    <color name="image_upload_soc_select">#595d66</color>
+    <color name="country_drop_down">#2277d4</color>
+    <!-- Old Green #1abc9c -->
 
 </resources>
