@@ -35,14 +35,19 @@
     <color name="gray">#404040</color>
     <color name="gray_edit">#C7C7CC</color>
     <color name="gray_edit_pressed">#96C7C7CC</color>
+
     <color name="green">#ee8942</color> <!-- Default State -->
-    <color name="green_dark">#c27239</color> <!-- Pressed state -->
-    <color name="red_delete">#f31c24</color>
-    <color name="red_discount">#f31c24</color>
-    <color name="red_delete_pressed">#96f31c24</color>
-    <color name="orange">#d94217</color>
-    <color name="purple">#646aa6</color>
-    <color name="white">#ffffff</color>
+    <color name="green_dark">#c27239</color> <!-- Pressed State -->
+    <color name="primary_button_text">#FFFFFF</color>
+
+    <color name="secondary_button_text">#FFFFFF</color>
+
+    <color name="red_delete">#F31C24</color>
+    <color name="red_discount">#F31C24</color>
+    <color name="red_delete_pressed">#96F31C24</color>
+    <color name="orange">#D94217</color>
+    <color name="purple">#646AA6</color>
+    <color name="white">#FFFFFF</color>
     <color name="overlay_translucent">#80000000</color>
     <color name="promo_code_background">#F3F3F3</color>
     <color name="product_details_layout_shipping">#22A0DD</color>
