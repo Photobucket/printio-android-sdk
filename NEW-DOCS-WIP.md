@@ -91,6 +91,16 @@ To change side menu background color, modify the following item in
 &nbsp;  
 &nbsp;  
 *On iOS this is a part of "Set which options to use in side menu"
+( > Change side menu separators' colors)  
+
+To change side menu separators' colors, modify the following items in  
+`res/values/colors.xml`
+```xml
+<color name="separator_color_1">#000000</color>
+<color name="separator_color_2">#343434</color>
+```
+&nbsp;  
+&nbsp;  
 ( > Change side menu text color)  
 
 To change side menu text color, modify the following item in  
@@ -549,13 +559,17 @@ On Android version, the badge is always visible and its background can be change
 &nbsp;  
 &nbsp;  
 #### > Remove plus sign from "Add more products" button. By default, sign is visible.  
-~~( > Remove `+` sign from `Add More Products` button)~~  
+( > Remove `+` sign from `Add More Products` button)  
 
-~~Default value is `false` (`+` sign is visible).~~
+Default value is `false` (`+` sign is visible).
 ```java
-//TO BE DONE
-//Android version does not have + sign on this button
 PIO.removePlusFromAddMoreProductsButton(boolean removePlusSign);
+```
+To change the icon for "Add More Products" button,
+replace the following icon with your own icon of the same name.  
+Recommended dimensions are listed next to the icon name.  
+```
+icon_add_more_products.png (36×36 xhdpi, 54x54 xxhdpi)
 ```
 &nbsp;  
 &nbsp;  
@@ -567,6 +581,13 @@ Payment Screen
 Default value is `false` (logo is visible).
 ```java
 PIO.removeLogoFromPaymentScreen(boolean removeLogo);
+```
+To change the logo on Payment and Order Confirmation screens,
+replace the following icon with your own icon of the same name.  
+Recommended dimensions are listed next to the icon name.  
+Default logo is a 100% transparent image (no logo).
+```
+icon_logo.png (71×80)
 ```
 &nbsp;  
 &nbsp;  
@@ -817,11 +838,14 @@ icon_question_big.png (25x38)
 #### > Change logo in SDK.  
 ( > Set custom logo for the SDK)  
 
-Replace the following icon with your own icon of the same name.  
-Recommended dimensions are listed next to the icon name.  
-Default logo is a 100% transparent image (no logo).
-```
-icon_logo.png (71×80)
+Logo is hidden by default.
+To show logo in the navigation bar, use the following method
+```java
+/**
+ * @param imageResourceId - ID of a drawable resource to be used.
+ * Make sure to use the image of appropriate size.
+ */
+PIO.setApplicationIconId(int imageResourceId);
 ```
 &nbsp;  
 &nbsp;  
