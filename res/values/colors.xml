@@ -14,8 +14,8 @@
     <color name="title_bar_separator">#D6D6D6</color> <!-- #D6D6D6 -->
     <color name="cart_items_qty_text">#FFFFFF</color>
     <color name="step_separator">#000000</color>
-    <color name="separator_color_1">#000000</color>
-    <color name="separator_color_2">#343434</color>
+    <color name="separator_color_1">#c6c6c6</color>
+    <color name="separator_color_2">#c6c6c6</color>
     <color name="side_menu_background">#e6e6e6</color> <!-- #1D1D1D -->
     <color name="side_menu_text">#000000</color> <!-- #FFFFFF -->
     <color name="side_menu_options_subtitle_text">#000000</color>
