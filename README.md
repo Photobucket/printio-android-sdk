@@ -160,6 +160,9 @@ Please add following activities to your AndroidManifest.xml file:
             android:name="print.io.ActivityOrderCompleted"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="print.io.ActivityHelp"
+            android:screenOrientation="portrait" />
         <activity android:name="com.facebook.LoginActivity" />
         <activity
             android:name="print.io.social.Instagram"
@@ -272,6 +275,12 @@ This code should be added to your Application class' onCreate() method.
 PIOConstants class is not built in into the SDK.  
 You should create your PIOConstants class and store SDK related constants there. (RECIPE_ID, API_URL, etc...)
 ```xml
+//initialize Parse push notifications
+PIO.setParseApplicationId(PIOConstants.Parse.APPLICATION_ID);
+PIO.setParseClientKey(PIOConstants.Parse.CLIENT_KEY);
+// MAKE SURE TO CALL THIS
+PIO.initializeParse(this);
+
 //set live or staging server, on staging you can test purchase process without using real money.
 PIO.setLiveApplication(boolean);
 
@@ -360,11 +369,6 @@ photoSourcesTest.add(PhotoSource.FLICKR);
 photoSourcesTest.add(PhotoSource.INSTAGRAM);
 photoSourcesTest.add(PhotoSource.PHOTOBUCKET);
 PIO.setPhotoSources(photoSourcesTest);
-
-//initialize Parse push notifications
-PIO.setParseApplicationId(PIOConstants.Parse.APPLICATION_ID);
-PIO.setParseClientKey(PIOConstants.Parse.CLIENT_KEY);
-PIO.initializeParse(this);
 ```
 
 #See also
