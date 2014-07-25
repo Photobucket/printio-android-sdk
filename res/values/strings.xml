@@ -352,8 +352,8 @@ right corner to review and add the item to your shopping cart.</string>
     <string name="rotate">Rotate</string>
     <string name="move">Move</string>
     <string name="undo">Undo</string>
-    <string name="progress_text_pt1">Loading.. Please wait.</string>
-    <string name="progress_text_pt2">Think Happy Thoughts</string>
+    <string name="progress_text_pt1">Loading&#8230;</string>
+    <string name="progress_text_pt2"></string>
     <string name="hello">Hello!</string>
     <string name="are_you_sure">Are you sure?</string>
     <string name="add_text_coming_soon">Add text feature is coming soon</string>
