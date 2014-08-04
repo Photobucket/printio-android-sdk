@@ -56,7 +56,7 @@
     <color name="white">#FFFFFF</color>
     <color name="overlay_translucent">#80000000</color>
     <color name="promo_code_background">#F3F3F3</color>
-    <color name="product_details_layout_shipping">#22A0DD</color>
+    <color name="product_details_layout_shipping">@color/blue_light</color>
     <color name="product_details_layout_bottom">#333333</color>
     <color name="image_upload_soc_but_bg">#333333</color>
     <color name="customize_product_tabbar">#FFFFFF</color>
@@ -69,7 +69,7 @@
     <color name="shipment_review_place_order">#333333</color>
     <color name="dialog_transparent">#AA000000</color>
     <color name="image_upload_soc_select">#595D66</color>
-    <color name="country_drop_down">#2277D4</color>
+    <color name="country_drop_down">@color/blue_light</color>
     <!-- Old Green #1ABC9C -->
 
 </resources>
