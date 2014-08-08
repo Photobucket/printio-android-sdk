@@ -22,7 +22,7 @@
     <color name="side_menu_text">#000000</color> <!-- #FFFFFF -->
     <color name="side_menu_options_subtitle_text">#000000</color>
     <color name="side_menu_options">#dadada</color> <!-- #239EDB -->
-    <color name="side_menu_change_currency_text">#FFFFFF</color>
+    <color name="side_menu_change_currency_text">#000000</color>
     <color name="side_menu_accounts_subtitle_text">#000000</color>
     <color name="side_menu_accounts">#dadada</color> <!-- #1CBA9B -->
     <color name="side_menu_info_subtitle_text">#000000</color>
