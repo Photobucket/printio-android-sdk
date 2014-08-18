@@ -32,10 +32,14 @@
     <color name="photosources_background">#000000</color>
     <color name="photosources_text">#FFFFFF</color>
 
-    <color name="product_details_header_1">#323232</color>
-    <color name="product_details_header_2">#42BE9C</color>
-    <color name="product_details_header_3">#22A0DD</color>
-    <color name="product_details_header_4">#646AA6</color>
+    <!-- Description -->
+    <color name="product_details_header_1">@color/blue_light</color>
+    <!-- Details -->
+    <color name="product_details_header_2">@color/blue_light</color>
+    <!-- Shipping Info -->
+    <color name="product_details_header_3">@color/blue_light</color>
+    <!-- Quality Guarantee -->
+    <color name="product_details_header_4">@color/blue_light</color>
 
     <!-- other_colors -->
     <color name="holo_blue_bright">#00DDFF</color>
