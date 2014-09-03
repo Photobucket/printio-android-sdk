@@ -1,4 +1,5 @@
-me="PIOActivity" default="help">
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="PIOActivity" default="help">
 
     <!-- The local.properties file is created and updated by the 'android' tool.
          It contains the path to the SDK. It should *NOT* be checked into
@@ -49,9 +50,9 @@ me="PIOActivity" default="help">
 
     <!-- quick check on sdk.dir -->
     <fail
-            message="sdk.dir is missing. Make sure to generate local.properties using 'android update project' or to inject it through the ANDROID_HOME environment variable."
-            unless="sdk.dir"
-    />
+        message="sdk.dir is missing. Make sure to generate local.properties using 'android update project' or to inject it through the ANDROID_HOME environment variable."
+        unless="sdk.dir"
+        />
 
     <!--
         Import per project custom build rules if present at the root of the project.
