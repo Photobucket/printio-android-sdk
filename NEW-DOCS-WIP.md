@@ -995,20 +995,30 @@ PIO.setPartnerName(String partnerName);
 ```
 &nbsp;  
 &nbsp;  
-#### > Jumps to screen  
-~~( > Jump to screen)~~  
+#### > Jump to screen  
 
 ```java
-//TO BE DONE
 /**
- * @param screen - Screen to jump to.
- * Can be one of following:
- * PRINTIO_SCREEN_SHOPING_CART
+ * Jumps directly to specified screen.
+ * 
+ * @param screenId  the ID of a screen to jump to.
+ * @param flags  flags that control app's behaviour (back button, etc...). If no flags are required, use 0
  */
-PIO.goToScreen(int screen);
+PIO.setJumpToScreen(int screenId, int flags);
 ```
-~~**NOTICE:**~~  
-~~Screens constants are defined in Screens.java~~  
+**NOTICE:**  
+Screens and flags are defined in PublicConstants.java  
+```
+Screen IDs:
+SCREEN_SHOPPING_CART
+
+Flags:
+/*
+ * If set, back button takes user to Featured Products screen
+ * Else, the user is taken back to the host app
+ */
+FLAG_GO_BACK_TO_FEATURED_PRODUCTS
+```
 &nbsp;  
 &nbsp;  
 #### > Set url for Terms and Conditions  
