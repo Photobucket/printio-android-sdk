@@ -20,4 +20,7 @@
     <dimen name="cart_items_quantity_top_offset">20dip</dimen>
     <dimen name="cart_items_quantity_right_offset">0dip</dimen>
 
+    <!-- added by jayw -->
+    <dimen name="action_bar_item_padding">8dp</dimen>
+
 </resources>

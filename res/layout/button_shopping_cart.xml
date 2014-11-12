@@ -8,17 +8,13 @@
     android:clickable="true"
     android:gravity="center"
     android:onClick="onClickShoppingCart"
-    android:paddingRight="4dip" >
+    android:paddingRight="@dimen/action_bar_item_padding" >
 
     <ImageView
         android:id="@+id/imageview_cart"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:paddingBottom="10dip"
-        android:paddingLeft="7dip"
-        android:paddingRight="7dip"
-        android:paddingTop="10dip"
         android:src="@drawable/icon_cart" />
 
     <TextView
@@ -27,8 +23,6 @@
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/imageview_cart"
         android:layout_alignRight="@+id/imageview_cart"
-        android:layout_marginTop="@dimen/cart_items_quantity_top_offset"
-        android:layout_marginRight="@dimen/cart_items_quantity_right_offset"
         android:background="@drawable/bg_cart_items_qty"
         android:gravity="center"
         android:textColor="@color/text_cart_items_quantity"
