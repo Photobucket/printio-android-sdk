@@ -68,10 +68,6 @@
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
                 android:layout_toRightOf="@+id/textview_save_to_cart"
-                android:paddingBottom="10dip"
-                android:paddingLeft="7dip"
-                android:paddingRight="7dip"
-                android:paddingTop="10dip"
                 android:src="@drawable/icon_cart_white" />
 
             <print.io.view.TextViewFontLight
@@ -80,8 +76,6 @@
                 android:layout_height="wrap_content"
                 android:layout_alignTop="@+id/imageview_cart"
                 android:layout_alignRight="@+id/imageview_cart"
-                android:layout_marginTop="@dimen/cart_items_quantity_top_offset"
-                android:layout_marginRight="@dimen/cart_items_quantity_right_offset"
                 android:background="@drawable/bg_cart_items_qty"
                 android:gravity="center"
                 android:textColor="@color/text_cart_items_quantity"
