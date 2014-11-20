@@ -8,9 +8,11 @@
     <color name="swipeable_bg_pressed">#EBEBEB</color>
     <color name="help_btn_bg">#FFFFFF</color>
     <color name="help_btn_bg_pressed">#EBEBEB</color>
-    <color name="title_bar_background">#FFFFFF</color> <!-- #42BE9C -->
+    <color name="title_bar_background">#FFFFFF</color>
     <color name="title_bar_text">#000000</color>
     <color name="title_bar_separator">#D6D6D6</color>
+
+    <color name="separator_list">#D6D6D6</color>
 
     <color name="text_cart_items_quantity">#FFFFFF</color>
     <color name="text_cart_items_quantity_side_menu">#FFFFFF</color>
