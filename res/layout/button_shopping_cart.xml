@@ -4,7 +4,7 @@
     android:layout_width="wrap_content"
     android:layout_height="match_parent"
     android:layout_alignParentRight="true"
-    android:layout_marginRight="4dip"
+    android:layout_marginRight="@dimen/action_bar_item_padding"
     android:clickable="true"
     android:onClick="onClickShoppingCart" >
 
@@ -13,8 +13,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:paddingLeft="7dip"
-        android:paddingRight="7dip"
         android:src="@drawable/icon_cart" />
 
     <print.io.view.TextViewFontLight
@@ -23,8 +21,6 @@
         android:layout_height="wrap_content"
         android:layout_alignRight="@+id/imageview_cart"
         android:layout_alignTop="@+id/imageview_cart"
-        android:layout_marginRight="@dimen/cart_items_quantity_right_offset"
-        android:layout_marginTop="@dimen/cart_items_quantity_top_offset"
         android:background="@drawable/bg_cart_items_qty"
         android:gravity="center"
         android:textColor="@color/text_cart_items_quantity"
