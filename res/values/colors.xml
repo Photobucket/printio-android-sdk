@@ -52,7 +52,7 @@
 
     <color name="gray">#404040</color>
     <color name="gray_edit">#C7C7CC</color>
-    <color name="gray_edit_pressed">#96C7C7CC</color>
+    <color name="gray_edit_pressed">#96A7A7AC</color>
 
     <color name="blue_light">#0ea0db</color>  <!-- Default State -->
     <color name="blue_dark">#1081af</color>   <!-- Pressed State -->
