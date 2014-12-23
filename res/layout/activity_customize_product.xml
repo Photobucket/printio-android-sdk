@@ -183,15 +183,6 @@
         </LinearLayout>
     </HorizontalScrollView>
 
-    <!-- Options -->
-
-    <include
-        android:id="@+id/options"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/tab_bar"
-        layout="@layout/item_options"
-        android:visibility="gone" />
     <!-- Icon Info -->
 
     <ImageView
@@ -277,6 +268,36 @@
         android:minWidth="45dp"
         android:onClick="onClickHelp"
         android:src="@drawable/icon_help_circle" />
+
+    <!-- Product options layout -->
+
+    <RelativeLayout
+        android:id="@+id/layout_product_options"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tab_bar"
+        android:background="#ffffff"
+        android:visibility="gone" >
+
+        <GridView
+            android:id="@+id/gridview_product_options"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:cacheColorHint="#00000000"
+            android:clipToPadding="false"
+            android:horizontalSpacing="1dip"
+            android:layoutAnimation="@anim/layout_grid_fade"
+            android:listSelector="@drawable/bg_blue"
+            android:numColumns="4"
+            android:paddingBottom="10dip"
+            android:paddingTop="6dip"
+            android:scrollbars="none"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="20dip"
+            android:visibility="visible" />
+    </RelativeLayout>
 
     <!-- Dialog Discard -->
 
