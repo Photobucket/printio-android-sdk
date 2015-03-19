@@ -315,13 +315,4 @@
         android:clickable="true"
         android:visibility="gone" />
 
-    <!-- Edit Image -->
-
-    <include
-        android:id="@+id/edit_image"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        layout="@layout/edit_image"
-        android:visibility="gone" />
-
 </RelativeLayout>
