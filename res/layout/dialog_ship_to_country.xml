@@ -5,33 +5,32 @@
     android:background="@drawable/bg_white"
     android:clickable="true" >
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
         android:background="@drawable/bg_white"
-        android:orientation="vertical"
         android:padding="8dip" >
 
-        <ScrollView
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1" >
-
-            <print.io.view.TextViewFontLight
-                android:id="@+id/dialog_message"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:paddingBottom="16dip"
-                android:paddingTop="8dip"
-                android:textColor="#5a5d66"
-                android:textSize="@dimen/text_size_normal" />
-        </ScrollView>
+        <print.io.view.AutoResizeTextView
+            android:id="@+id/dialog_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:drawableRight="@drawable/icon_pin_grey"
+            android:gravity="center"
+            android:paddingBottom="16dip"
+            android:paddingTop="8dip"
+            android:singleLine="true"
+            android:text="@string/shipping_to"
+            android:textColor="#5a5d66"
+            android:textSize="@dimen/text_size_normal" />
 
         <LinearLayout
+            android:id="@+id/layout_buttons"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_below="@+id/dialog_message"
             android:orientation="horizontal" >
 
             <print.io.view.ButtonFontLight
@@ -62,6 +61,6 @@
                 android:textSize="@dimen/text_size_normal"
                 android:textStyle="bold" />
         </LinearLayout>
-    </LinearLayout>
+    </RelativeLayout>
 
 </RelativeLayout>

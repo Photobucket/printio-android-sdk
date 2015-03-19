@@ -49,22 +49,8 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_toLeftOf="@+id/textview_price"
             android:src="@drawable/icon_ver_divider"
             android:visibility="invisible" />
-
-        <print.io.view.TextViewFontNormal
-            android:id="@+id/textview_price"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
-            android:layout_centerVertical="true"
-            android:gravity="center_horizontal"
-            android:paddingLeft="5dip"
-            android:paddingRight="10dip"
-            android:textColor="@color/title_bar_text"
-            android:textSize="@dimen/text_size_title"
-            android:visibility="gone" />
     </RelativeLayout>
 
     <View
@@ -126,14 +112,5 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         layout="@layout/overlay_buttons" />
-
-    <!-- Help -->
-
-    <include
-        android:id="@+id/item_help"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        layout="@layout/item_help"
-        android:visibility="gone" />
 
 </RelativeLayout>

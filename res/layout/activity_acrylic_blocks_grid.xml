@@ -96,7 +96,6 @@
                 android:gravity="center"
                 android:paddingBottom="10dip"
                 android:paddingTop="10dip"
-                android:text="@string/step_1_acrylic_prints"
                 android:textColor="#333333"
                 android:textSize="@dimen/text_size_large" />
 
@@ -196,14 +195,5 @@
             </LinearLayout>
         </LinearLayout>
     </ScrollView>
-
-    <!-- Help -->
-
-    <include
-        android:id="@+id/item_help"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        layout="@layout/item_help"
-        android:visibility="gone" />
 
 </RelativeLayout>
