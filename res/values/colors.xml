@@ -40,7 +40,7 @@
 
     <!-- Description -->
 
-    <color name="product_details_create_it_container_background">@color/blue_light</color>
+    <color name="product_details_create_it_container_background">#EBEBEB</color>
     <color name="product_details_header_1">@color/blue_light</color>
     <!-- Details -->
     <color name="product_details_header_2">@color/blue_light</color>
