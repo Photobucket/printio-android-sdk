@@ -35,7 +35,7 @@
     <color name="side_menu_version_text">#FFFFFF</color>
     <color name="customize_product_tooltip">@color/blue_light</color>
 
-    <color name="photosources_background">#000000</color>
+    <color name="photosources_background">#595d66</color>
     <color name="photosources_text">#FFFFFF</color>
 
     <!-- Description -->
