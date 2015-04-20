@@ -14,7 +14,7 @@
     <dimen name="text_size_title">20dip</dimen>
     <dimen name="text_size_huge">32dip</dimen>
 
-    <dimen name="text_size_photosources">12dip</dimen>
+    <dimen name="text_size_photosources">11dip</dimen>
 
     <dimen name="text_size_side_menu_button">14dip</dimen>
 
