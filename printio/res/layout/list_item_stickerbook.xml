@@ -30,7 +30,22 @@
             android:id="@+id/imageview_overlay"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_gravity="center" />
+            android:layout_gravity="center"
+            android:scaleType="fitXY" />
+
+        <LinearLayout
+            android:id="@+id/view_resolution_warning"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/resolution_warning_background"
+            android:gravity="center_vertical|center_horizontal"
+            android:visibility="gone" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_resolution_warning_big" />
+        </LinearLayout>
     </FrameLayout>
 
     <LinearLayout
@@ -47,7 +62,7 @@
             android:layout_margin="20dip"
             android:clickable="true"
             android:onClick="onClickMinus"
-            android:src="@drawable/bg_selector_minus" />
+            android:src="@drawable/btn_minus" />
 
         <print.io.view.TextViewFontLight
             android:id="@+id/textview_quantity"
@@ -66,7 +81,7 @@
             android:layout_margin="20dip"
             android:clickable="true"
             android:onClick="onClickPlus"
-            android:src="@drawable/bg_selector_plus" />
+            android:src="@drawable/btn_plus" />
     </LinearLayout>
 
 </LinearLayout>

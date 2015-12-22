@@ -8,13 +8,26 @@
 
     <dimen name="title_bar_height">48dip</dimen>
 
-    <dimen name="text_size_small">12dip</dimen>
-    <dimen name="text_size_normal">14dip</dimen>
-    <dimen name="text_size_large">18dip</dimen>
-    <dimen name="text_size_title">20dip</dimen>
-    <dimen name="text_size_huge">32dip</dimen>
+    <!-- remplaced in v3.1.26 -->
+    <!--<dimen name="text_size_small">12dip</dimen>-->
+    <!--<dimen name="text_size_normal">14dip</dimen>-->
+    <!--<dimen name="text_size_large">18dip</dimen>-->
+    <!--<dimen name="text_size_title">20dip</dimen>-->
+    <!--<dimen name="text_size_huge">32dip</dimen>-->
 
-    <dimen name="text_size_photosources">11dip</dimen>
+    <!--<dimen name="text_size_photosources">11dip</dimen>-->
+
+    <dimen name="text_size_small">10dip</dimen>
+    <dimen name="text_size_normal">12dip</dimen>
+    <dimen name="text_size_medium">14dip</dimen>
+    <dimen name="text_size_large">16dip</dimen>
+    <dimen name="text_size_title">18dip</dimen>
+    <dimen name="text_size_huge">30dip</dimen>
+
+    <dimen name="text_size_button_create_it">12dip</dimen>
+    <dimen name="text_size_button_create_it_v2">16dip</dimen>
+
+    <dimen name="text_size_photosources">10dip</dimen>
 
     <dimen name="text_size_side_menu_button">15sp</dimen>
 
@@ -22,7 +35,9 @@
     <dimen name="cart_items_quantity_top_offset">0dip</dimen>
     <dimen name="cart_items_quantity_right_offset">0dip</dimen>
 
-    <!-- added by jayw -->
+    <dimen name="customize_product_view_margins">8dip</dimen>
+
+    <!-- added by jayw - is it used?? -->
     <dimen name="action_bar_item_padding">8dp</dimen>
 
 </resources>

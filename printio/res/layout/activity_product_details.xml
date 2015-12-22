@@ -26,7 +26,7 @@
                 android:id="@+id/imageview_back"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/icon_arrow_back_2" />
+                android:src="@drawable/icon_arrow_back" />
         </LinearLayout>
 
         <ImageView
@@ -36,7 +36,7 @@
             android:src="@drawable/icon_ver_divider"
             android:visibility="invisible" />
 
-        <print.io.view.TextViewFontNormal
+        <print.io.view.TextViewFontTitle
             android:id="@+id/textview_product_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -62,11 +62,42 @@
         android:layout_below="@+id/layout_titlebar"
         android:background="@color/title_bar_separator" />
 
+    <!-- Country drop down menu -->
+
+    <LinearLayout
+        android:id="@+id/layout_country_drop_down"
+        android:layout_width="match_parent"
+        android:layout_height="45dip"
+        android:layout_below="@+id/view_dummy_title_separator"
+        android:background="@color/select_country_background"
+        android:clickable="true"
+        android:gravity="center"
+        android:onClick="onClickChangeCountry"
+        android:visibility="gone" >
+
+        <print.io.view.TextViewFontTitle
+            android:id="@+id/textview_country_drop_down"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="3dp"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/text_size_normal"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/separator_1"
+        android:layout_width="match_parent"
+        android:layout_height="2dip"
+        android:layout_below="@+id/layout_country_drop_down"
+        android:background="#cbcbce"
+        android:visibility="gone" />
+
     <print.io.view.CustomScrollView
         android:id="@+id/scroll_view_info"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/view_dummy_title_separator"
+        android:layout_below="@+id/separator_1"
         android:scrollbars="none" >
 
         <LinearLayout
@@ -106,45 +137,63 @@
 
             <!-- Layout Items -->
 
+            <print.io.view.TextViewFontNormal
+                android:id="@+id/textview_description_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dip"
+                android:paddingLeft="15dip"
+                android:paddingRight="20dip"
+                android:paddingTop="20dip"
+                android:text="@string/description"
+                android:textColor="@color/product_details_header_1"
+                android:textSize="@dimen/text_size_large" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="15dip"
+                android:layout_marginRight="15dip"
+                android:background="#d8d8d8" />
+
             <LinearLayout
-                android:id="@+id/container_product_details"
+                android:id="@+id/layout_description_container"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:paddingBottom="10dip"
-                android:paddingTop="10dip" />
+                android:paddingBottom="10dip" >
 
-            <include
-                android:id="@+id/item_details"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dip"
-                layout="@layout/item_product_details_details"
-                android:visibility="visible" />
+                <LinearLayout
+                    android:id="@+id/layout_description_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="10dip"
+                    android:paddingLeft="15dip"
+                    android:paddingRight="15dip"
+                    android:paddingTop="10dip" />
+
+                <include
+                    android:id="@+id/item_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dip"
+                    layout="@layout/item_product_details_details" />
+            </LinearLayout>
 
             <include
                 android:id="@+id/item_shipping_info"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dip"
-                layout="@layout/item_product_details_shipping_info"
-                android:visibility="visible" />
+                layout="@layout/item_product_details_shipping_info" />
 
             <include
                 android:id="@+id/item_quality_guarantee"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dip"
-                layout="@layout/item_product_details_quality"
-                android:visibility="visible" />
-
-            <include
-                android:id="@+id/item_price_chart"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="15dip"
-                layout="@layout/item_product_details_price_chart"
-                android:visibility="gone" />
+                layout="@layout/item_product_details_quality" />
         </LinearLayout>
     </print.io.view.CustomScrollView>
 
@@ -154,17 +203,8 @@
         android:id="@+id/container_create_it_sticky"
         android:layout_width="match_parent"
         android:layout_height="60dip"
-        android:layout_below="@+id/view_dummy_title_separator"
+        android:layout_below="@+id/separator_1"
         layout="@layout/item_product_details_buy_it"
-        android:visibility="gone" />
-
-    <!-- For coasters product -->
-
-    <include
-        android:id="@+id/dialog_coasters"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        layout="@layout/dialog_stickerbook"
         android:visibility="gone" />
 
 </RelativeLayout>

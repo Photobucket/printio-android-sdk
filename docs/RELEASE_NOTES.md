@@ -1,5 +1,290 @@
 **Android Release Notes**
 
+3.1.21 (v118)
+=============
+
+IMPORTANT NOTE TO PARTNERS
+========
+We have made changes to Framed Canvas’ and T-shirts products. If you have these products enabled in the production version of your admin panel, they will not work in the iOS and Android clients until you update to this SDK. A work around is to disable these products in your admin panel until you are ready to update to the latest Makeable SDK. This will ensure a better user experience.  
+
+**Features:**
+
+- Added an exception when SDK is invoked without specifying any Payment methods
+
+- Added ability to make a purchase when a coupon brings order total to $0
+
+- Added ability to enter Billing Address when making purchases
+
+- Removed 5-character limit when entering Zip codes
+
+- Added confirmation dialog when logging out of photo sources
+
+- Customizable user flow for `Options` screen. Refer to [docs](docs/SDK_REFERENCE.md#-set-strategy-for-steps-with-single-option)
+
+- V2 screens can be used without passed-in image
+
+- Vendor logo can now be displayed in V1 screens
+
+- `Cancel` button in `Options` screen is now customizable. Refer to [docs](docs/SDK_REFERENCE.md#-set-cancel-button-visibility)
+
+- Resolution warning thresholds reduced from 0.5 to 0.33
+
+- Updated `Google Photos` icon
+
+- Added new options for some products
+
+- Added crash reporting
+
+**Bugs:**
+
+- Fixed a bug which occurred when some images were passed in, but `Preselected` photo source was not selected
+
+- Fixed a bug which occurred when country was changed from within a category
+
+- Fixed a crash when dialog is shown while the app is in the background
+
+- Fixed a crash on image preview in V2 `Product Details` screen
+
+- Fixed image alignment in MINIBOOKS product
+
+- Fixed `Add more photos` button visibility when `PIOConfig.setShowPhotosInCustomize()` is set to `false`
+
+- Fixed transparency issues in MINIBOOKS product
+
+- Fixed a crash in WALL_CALENDARS product when using auto-populate option
+
+- Fixed bad overlays and bad/missing icons for some products
+
+- Fixed text being cut off on some labels
+
+###
+
+3.1.7 (v118)
+============
+
+**Features:**
+
+- Redesigned `Products` screen
+
+- All products enabled in `Products` screen V2
+
+- PayPal disabled when order total is zero
+
+- Added 'Auto Populate' feature for Wall Calendars and Ottomans
+
+- Added new layout step strategy: `SKIP_FOR_SINGLE_PASSED_IMAGE` (refer to [this method](docs/SDK_REFERENCE.md#-set-strategy-for-choose-layout-step-on-product-options-screen))
+
+**Bugs:**
+
+- Fixed a crash caused by setting `PIOConfig.setShowOptionsInCustomize()` to `false`
+
+- Fixed loading of large overlay images
+
+- Fixed a crash on Mementos product
+
+- Fixed image manipulations being lost when screen turned off/on in List-type products
+
+- Adjusted promo text in V2 `Product Details` screen
+
+- Changed price container color
+
+- Added missing icons for some product options
+
+- Fixed 'Decrease text size' button
+
+- Fixed a crash when replacing photos in Layflat Photobooks
+
+- Buttons in `Customize Product` screen are now closed when tapping outside
+
+###
+
+3.1.0 (v118)
+============
+
+**Features:**
+
+- Add text to product design
+
+- New Product: Layflat Photobooks
+
+- New Product: Flat Cards
+
+- New Product: Mementos
+
+- New Product: Adjustable Strap Tote
+
+- New Product: Bandana
+
+- New Product: Dopp Kits
+
+- New Product: Fabric By The Yard
+
+- New Product: Framed Canvas
+
+- New Product: Hand Towels
+
+- Warning when selected photos are too small to be printed on selected product
+
+- New Shopping Cart layout
+
+- New Screen: `Past Orders`
+
+- New Screen: `Order Details`
+
+- New Screen: `Order Status`
+
+- `What's New` Dialog added
+
+- Merged all product options into single page
+
+- Added method for showing 'Cancel' button on Options Screen (`PIOConfig.setCancelOptionsButtonVisibility(boolean isVisible)`)
+
+- Added method for setting Retail Price discount percent (`Product Details` screen)
+
+- Added method to enable Template filtering based on passed photos count (`PIOConfig.setLayoutStepStrategy(LayoutStepStrategy strategy)`)
+
+**Bugs:**
+
+- Fixed a crash caused by Facebook ID not being set in PIOConfig
+
+- Fixed overlapping Gear icon and Back button on `Order Completed` screen
+
+- Fixed an issue which caused a crash on some devices when too many photos are selected
+
+- Autoresize subtotal text in `Shopping Cart` screen
+
+###
+
+3.0.27 (v117)
+============
+
+**Features:**
+
+- /
+
+**Bugs:**
+
+- Removed dependency on FacebookSDK when Facebook is not being used as a Photo Source
+
+- Fixed updating of prices for Shopping Cart items
+
+###
+
+3.0.24 (v117)
+============
+
+**Features:**
+
+- Updated design of `Product Details V2` screen
+
+- Added a method to remove logo from `Order Completed` screen
+
+**Bugs:**
+
+- /
+
+###
+
+3.0.18 (v117)
+============
+
+**Features:**
+
+- Added `Product Details V2` screen
+
+- `Create It` button renamed `Make It`
+
+**Bugs:**
+
+- Fixed Unicode support in API calls
+
+###
+
+3.0.13 (v117)
+============
+
+**Features:**
+
+- Added `Products V2` screen
+
+**Bugs:**
+
+- Fixed `Products` screen sometimes showing list instead of grid
+
+- Fixed duplicating items in Shopping Cart
+
+###
+
+3.0.4 (v117)
+============
+
+**Features:**
+
+- Order Number on Order Completed screen can be selected and copied
+
+**Bugs:**
+
+- Fixed Address validation issues
+
+- Fixed `setProductSkuFromApp()` method
+
+- Fixed deletion of items on Shipment Review screen
+
+###
+
+3.0.0 (v117)
+============
+
+**API Changes:**
+
+- Please refer to [Migration Guide](MIGRATION_GUIDE.md)
+
+**Features:**
+
+- Reduced SDK size by half
+
+- Updated Facebook SDK to latest version (4.2.0)
+
+- Added support for new Products format
+
+- Added new customization steps for some products
+
+- Added Discount Amount and Coupon Code to Order Completed callback
+
+- Added full-screen image preview on Product Details screen
+
+- Added fourth customizable font type (Normal, Light, Bold, *Title*)
+
+- Added a method to clear all saved Shipping Addresses
+
+- Turned off Google Analytics in Staging mode
+
+**Bugs:**
+
+- Fixed Credit Card number validation - All card types are now supported
+
+- Fixed image rotation according to EXIF attributes
+
+- Fixed a crash which occured when using 'jump to Shopping Cart' and the Shopping Cart is empty
+
+- Fixed negative values in Shopping Cart
+
+- Some tweaks to Customize Product screen
+
+- Fixed issues with applying promo coupons
+
+- Fixed missing thumbnails in Shopping Cart for some products
+
+- Fixed memory issues on some devices when creating multi-item products
+
+- Fixed Products search in Side Menu
+
+- Fixed an issue when loading Facebook albums with lots of photos
+
+- Fixed a crash when paying using PayPal and order total is $0
+
+- Stability & code improvements
+
 ### 
 
 2.3.0a (v116)
