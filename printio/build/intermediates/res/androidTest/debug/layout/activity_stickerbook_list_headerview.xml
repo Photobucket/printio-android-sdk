@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="8dip"
+    android:paddingTop="8dip" >
+
+    <print.io.view.TextViewFontLight
+        android:id="@+id/textview_quantity_cropping"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="15dip"
+        android:text="@string/image_quantity_and_cropping"
+        android:textColor="#5a5d66"
+        android:textSize="@dimen/text_size_large" />
+
+    <print.io.view.TextViewFontLight
+        android:id="@+id/textview_double_tap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textview_quantity_cropping"
+        android:layout_marginBottom="5dip"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="10dip"
+        android:drawableLeft="@drawable/icon_double_tap_to_adjust_crop"
+        android:gravity="center"
+        android:text="@string/double_tap_to_adjust_crop"
+        android:textColor="#5a5d66"
+        android:textSize="@dimen/text_size_normal" />
+
+    <print.io.view.TextViewFontLight
+        android:id="@+id/textview_product_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textview_double_tap"
+        android:layout_marginBottom="10dip"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="10dip"
+        android:gravity="center"
+        android:textColor="#5a5d66"
+        android:textSize="@dimen/text_size_normal" />
+
+</RelativeLayout><!-- From: file:/Users/shanestaples/dev/projects/v3_android/third-party/printio-android-sdk/printio/res/layout/activity_stickerbook_list_headerview.xml --><!-- From: file:/Users/shanestaples/dev/projects/v3_android/third-party/printio-android-sdk/printio/build/intermediates/bundles/debug/res/layout/activity_stickerbook_list_headerview.xml -->

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <translate
+        android:duration="200"
+        android:fromYDelta="-100%"
+        android:toYDelta="0%" />
+
+</set><!-- From: file:/Users/shanestaples/dev/projects/v3_android/third-party/printio-android-sdk/printio/res/anim/slide_in_top.xml --><!-- From: file:/Users/shanestaples/dev/projects/v3_android/third-party/printio-android-sdk/printio/build/intermediates/bundles/debug/res/anim/slide_in_top.xml -->

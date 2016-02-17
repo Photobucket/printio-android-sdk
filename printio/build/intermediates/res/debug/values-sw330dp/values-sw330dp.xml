@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/Users/shanestaples/dev/projects/v3_android/third-party/printio-android-sdk/printio/res/values-sw330dp/dimens.xml -->
+    <eat-comment/>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="cart_items_quantity_right_offset">0dip</dimen>
+    <dimen name="cart_items_quantity_top_offset">0dip</dimen>
+    <dimen name="customize_product_view_margins">8dip</dimen>
+    <dimen name="text_size_button_create_it">14dip</dimen>
+    <dimen name="text_size_cart_items_quantity">10dip</dimen>
+    <dimen name="text_size_huge">32dip</dimen>
+    <dimen name="text_size_large">18dip</dimen>
+    <dimen name="text_size_normal">14dip</dimen>
+    <dimen name="text_size_photosources">12dip</dimen>
+    <dimen name="text_size_side_menu_button">14dip</dimen>
+    <dimen name="text_size_small">12dip</dimen>
+    <dimen name="text_size_title">20dip</dimen>
+    <dimen name="title_bar_height">48dip</dimen>
+</resources>

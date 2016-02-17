@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dip"
+    android:background="@color/customize_product_tabbar_background"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:orientation="horizontal" >
+
+        <print.io.view.TextViewFontLight
+            android:id="@+id/textview_text"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/bg_selector_abc"
+            android:clickable="true"
+            android:drawableTop="@drawable/icon_abc"
+            android:gravity="center"
+            android:onClick="onClickText"
+            android:paddingBottom="4dip"
+            android:paddingTop="9dip"
+            android:text="@string/text"
+            android:textColor="@color/btn_abc_text"
+            android:textSize="@dimen/text_size_normal" />
+
+        <print.io.view.TextViewFontLight
+            android:id="@+id/textview_effects"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/bg_selector_effects"
+            android:clickable="true"
+            android:drawableTop="@drawable/icon_effects"
+            android:gravity="center"
+            android:onClick="onClickEffects"
+            android:paddingBottom="4dip"
+            android:paddingTop="8dip"
+            android:text="@string/effects"
+            android:textColor="@color/btn_effects_text"
+            android:textSize="@dimen/text_size_normal" />
+
+        <print.io.view.TextViewFontLight
+            android:id="@+id/textview_layout"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/bg_selector_layout"
+            android:clickable="true"
+            android:drawableTop="@drawable/icon_layout"
+            android:gravity="center"
+            android:onClick="onClickLayout"
+            android:paddingBottom="4dip"
+            android:paddingTop="8dip"
+            android:text="@string/layout"
+            android:textColor="@color/btn_layout_text"
+            android:textSize="@dimen/text_size_normal" />
+
+        <print.io.view.TextViewFontLight
+            android:id="@+id/textview_options"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/bg_selector_options"
+            android:clickable="true"
+            android:drawableTop="@drawable/icon_options"
+            android:gravity="center"
+            android:onClick="onClickOptions"
+            android:paddingBottom="4dip"
+            android:paddingTop="8dip"
+            android:text="@string/options"
+            android:textColor="@color/btn_options_text"
+            android:textSize="@dimen/text_size_normal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_undercolor"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:orientation="horizontal" >
+
+        <View
+            android:id="@+id/undercolor_abc"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/edit_button_abc_primary" />
+
+        <View
+            android:id="@+id/undercolor_effects"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/edit_button_effects_primary" />
+
+        <View
+            android:id="@+id/undercolor_layout"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/edit_button_layout_primary" />
+
+        <View
+            android:id="@+id/undercolor_options"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/edit_button_options_primary" />
+    </LinearLayout>
+
+</LinearLayout><!-- From: file:/Users/shanestaples/dev/projects/v3_android/third-party/printio-android-sdk/printio/res/layout/tab_bar.xml -->

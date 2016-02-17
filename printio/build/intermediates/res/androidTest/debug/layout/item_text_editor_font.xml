@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:ellipsize="end"
+    android:gravity="center"
+    android:maxLines="1"
+    android:padding="2dip"
+    android:textColor="@color/text_editor_font_default"
+    android:textSize="16dip" />
+<!-- From: file:/Users/shanestaples/dev/projects/v3_android/third-party/printio-android-sdk/printio/res/layout/item_text_editor_font.xml --><!-- From: file:/Users/shanestaples/dev/projects/v3_android/third-party/printio-android-sdk/printio/build/intermediates/bundles/debug/res/layout/item_text_editor_font.xml -->

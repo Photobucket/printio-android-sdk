@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/create_it_button_pressed" android:state_pressed="true">
+        <shape>
+            <corners android:radius="3px" />
+        </shape>
+    </item>
+    <item android:drawable="@drawable/create_it_button_default">
+        <shape>
+            <corners android:radius="3px" />
+        </shape>
+    </item>
+
+</selector><!-- From: file:/Users/shanestaples/dev/projects/v3_android/third-party/printio-android-sdk/printio/res/drawable/btn_create_it.xml --><!-- From: file:/Users/shanestaples/dev/projects/v3_android/third-party/printio-android-sdk/printio/build/intermediates/bundles/debug/res/drawable/btn_create_it.xml -->

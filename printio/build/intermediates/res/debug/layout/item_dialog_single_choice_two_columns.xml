@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_text"
+    android:layout_width="match_parent"
+    android:layout_height="48dip"
+    android:background="@drawable/bg_selector_light"
+    android:clickable="true"
+    android:gravity="center_vertical"
+    android:paddingLeft="16dip"
+    android:paddingRight="16dip" />
+<!-- From: file:/Users/shanestaples/dev/projects/v3_android/third-party/printio-android-sdk/printio/res/layout/item_dialog_single_choice_two_columns.xml -->

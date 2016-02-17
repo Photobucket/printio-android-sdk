@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item><shape>
+            <corners android:radius="1dip" />
+
+            <solid android:color="@color/photosources_background" />
+        </shape></item>
+
+</selector><!-- From: file:/Users/shanestaples/dev/projects/v3_android/third-party/printio-android-sdk/printio/res/drawable/bg_photosources.xml --><!-- From: file:/Users/shanestaples/dev/projects/v3_android/third-party/printio-android-sdk/printio/build/intermediates/bundles/debug/res/drawable/bg_photosources.xml -->

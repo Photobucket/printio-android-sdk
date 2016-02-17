@@ -1,0 +1,9 @@
+<print.io.view.TextViewFontBold xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:paddingBottom="16dip"
+    android:text="@string/or_caps"
+    android:textColor="#333333"
+    android:textSize="@dimen/text_size_large" />
+<!-- From: file:/Users/shanestaples/dev/projects/v3_android/third-party/printio-android-sdk/printio/res/layout/item_custom_step_or.xml -->

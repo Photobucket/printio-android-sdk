@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="printiosdk">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/printio/libs/printiosdk.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

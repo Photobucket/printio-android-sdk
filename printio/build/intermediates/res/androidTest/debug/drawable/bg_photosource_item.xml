@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="true"><shape>
+            <solid android:color="@color/photosources_background_selected" />
+
+            <corners android:radius="3px" />
+        </shape></item>
+    <item android:state_selected="true"><shape>
+            <solid android:color="@color/photosources_background_selected" />
+
+            <corners android:radius="3px" />
+        </shape></item>
+    <item><shape>
+            <corners android:radius="3px" />
+
+            <solid android:color="@color/transparent" />
+        </shape></item>
+
+</selector><!-- From: file:/Users/shanestaples/dev/projects/v3_android/third-party/printio-android-sdk/printio/res/drawable/bg_photosource_item.xml --><!-- From: file:/Users/shanestaples/dev/projects/v3_android/third-party/printio-android-sdk/printio/build/intermediates/bundles/debug/res/drawable/bg_photosource_item.xml -->

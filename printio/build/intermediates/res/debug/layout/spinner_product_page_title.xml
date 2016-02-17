@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<print.io.view.TextViewFontNormal xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:textColor="@color/button_back_next_photobooks_text"
+    android:textSize="@dimen/text_size_normal" />
+<!-- From: file:/Users/shanestaples/dev/projects/v3_android/third-party/printio-android-sdk/printio/res/layout/spinner_product_page_title.xml -->

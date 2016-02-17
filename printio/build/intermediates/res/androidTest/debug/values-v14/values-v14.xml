@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/Users/shanestaples/dev/projects/v3_android/third-party/printio-android-sdk/printio/build/intermediates/bundles/debug/res/values-v14/values-v14.xml -->
+    <eat-comment/>
+    <style name="AppBaseTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+        <!-- API 14 theme customizations can go here. -->
+    </style>
+    <style name="BaseThemePrintIO" parent="@android:style/Theme.Holo.Light">
+
+        <!-- Any customizations for your app running on devices with Theme.Holo here -->
+        <item name="android:windowActionModeOverlay">true</item>
+    </style>
+    <style name="BaseThemePrintIONoStatusBar" parent="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen">
+
+        <!-- Any customizations for your app running on devices with Theme.Holo here -->
+        <item name="android:windowActionModeOverlay">true</item>
+    </style>
+    <style name="DialogWhite" parent="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:background">#00000000</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTitleStyle">@null</item>
+        <item name="android:colorBackground">#ffffff</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- <item name="android:width">600dip</item> -->
+        <item name="android:height">50dip</item>
+        <item name="android:textColor">#FF000000</item>
+    </style>
+    <style name="ThemePrintIODialog" parent="@android:style/Theme.Holo.Light.Dialog">
+        <item name="android:backgroundDimAmount">0.67</item>
+        <item name="android:windowCloseOnTouchOutside">false</item>
+    </style>
+    <style name="ThemePrintIODialogFullscreen" parent="BaseThemePrintIO">
+        <item name="android:windowCloseOnTouchOutside">false</item>
+    </style>
+    <style name="ThemePrintIODialogFullscreenNoStatusBar" parent="BaseThemePrintIONoStatusBar">
+        <item name="android:windowCloseOnTouchOutside">false</item>
+    </style>
+    <style name="ThemePrintIODialogTwoColumns" parent="ThemePrintIODialog">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:minWidth">360dip</item>
+    </style>
+</resources>

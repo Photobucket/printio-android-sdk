@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<print.io.view.TextViewFontNormal xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center"
+    android:padding="16dip"
+    android:textColor="#FF222222"
+    android:textSize="@dimen/text_size_normal" />
+<!-- From: file:/Users/shanestaples/dev/projects/v3_android/third-party/printio-android-sdk/printio/res/layout/spinner_quantity_dropdown.xml --><!-- From: file:/Users/shanestaples/dev/projects/v3_android/third-party/printio-android-sdk/printio/build/intermediates/bundles/debug/res/layout/spinner_quantity_dropdown.xml -->
