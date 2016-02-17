@@ -23,7 +23,7 @@
 
     <color name="step_header_background">#42BE9C</color>
     <color name="step_separator">#000000</color>
-
+    
     <color name="separator_color_1">#c6c6c6</color>
     <color name="separator_color_2">#c6c6c6</color>
     <color name="side_menu_background">#e6e6e6</color> <!-- #1D1D1D -->
@@ -35,8 +35,6 @@
     <color name="side_menu_accounts">#dadada</color> <!-- #1CBA9B -->
     <color name="side_menu_info_subtitle_text">#000000</color>
     <color name="side_menu_info">#dadada</color> <!-- #6369A6 -->
-    <color name="side_menu_version_bg">#000000</color>
-    <color name="side_menu_version_text">#FFFFFF</color>
 
     <color name="price_container_background">#2277D4</color>
     <color name="select_country_background">#2277D4</color>
