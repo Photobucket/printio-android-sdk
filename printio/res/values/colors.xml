@@ -35,6 +35,8 @@
     <color name="side_menu_accounts">#dadada</color> <!-- #1CBA9B -->
     <color name="side_menu_info_subtitle_text">#000000</color>
     <color name="side_menu_info">#dadada</color> <!-- #6369A6 -->
+    <color name="side_menu_version_bg">#000000</color>
+    <color name="side_menu_version_text">#FFFFFF</color>
 
     <color name="price_container_background">#2277D4</color>
     <color name="select_country_background">#2277D4</color>
