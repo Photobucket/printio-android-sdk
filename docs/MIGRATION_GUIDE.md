@@ -1,4 +1,15 @@
-Migrating to v3.X.X from v3.1.28
+Migrating to v3.2.7 from v3.2.2
+========
+
+**Changes in PIOConfig**
+
+Method `setGoogleAnalyticsTrackId` has been removed. In order to use Google Analytics you should do following:
+```
+// import print.io.analytics.impl.GoogleAnalyticsTracker;
+config.setAnalyticsTracker(new GoogleAnalyticsTracker(trackingId));
+```
+
+Migrating to v3.2.0 from v3.1.28
 ========
 
 **Changes in AndroidManifest.xml**
@@ -11,6 +22,58 @@ should be replaced by:
 ```xml
 <activity android:name="print.io.ActivityPaymentMethod" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateUnchanged" />
 ```
+
+Following activity declaration should be added:
+```xml
+<activity android:name="print.io.ActivityQualityGuarantee" android:screenOrientation="portrait" />
+```
+
+**Changes in PIOConfig**
+
+Method `setApiUrl` has been removed. It is not required to set API URL anymore.
+
+Method `setRecipeID(String recipeID)` has been changed to `setRecipeIDs(String liveRecipeID, String stagingRecipeID)`. From now on you would need to specify both live and staging recipe IDs (respectively) when setting recipe IDs.
+
+**Changes after Side Menu got redesigned**
+
+Side Menu got brand new design in v3.2.0.  
+It is advised that all custom configurations related to Side Menu get checked because they could be obsolete now.  
+Please refer to Side Menu section inside [SDK Reference](SDK_REFERENCE.md#side-menu) for new configuration possibilities.
+
+Major changes related to the Side Menu:
+
+- Methods for setting available options in side menu have been changed  
+
+    - Methods `PIOConfig.setSideMenuInfoButtons()` and `PIOConfig.setSideMenuButtonsTop()` have been removed,  
+    and new method for controlling visibility of buttons inside Side Menu `PIOConfig.setVisibleSideMenuButtons()` has been added.
+
+- Side Menu color scheme has been changed  
+
+    - Following colors have become obsolete:
+
+```
+side_menu_options_subtitle_text
+side_menu_options
+side_menu_accounts_subtitle_text
+side_menu_accounts
+side_menu_info_subtitle_text
+side_menu_info
+side_menu_version_bg
+```
+
+**BugSense library dependency**
+
+BugSense library has been removed from the SDK, but feature is still supported via the same method `PIOConfig.setBugSenseKey(String)`.  
+If you wish to use this feature in SDK v3.2.0 or later, you have to add BugSense library v3.5 to your project.
+
+**Parse library**
+
+Parse library has been removed and so was the support for push notifications.  
+It is up to the host application to implement push notifications.
+
+**Facebook SDK**
+Facebook photo source now uses Facebook SDK v4.5.0.
+
 
 Migrating to v3.1.28 from v3.1.21
 ========

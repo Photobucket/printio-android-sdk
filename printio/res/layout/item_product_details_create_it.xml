@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_transparent_bottom"
+    android:layout_width="match_parent"
+    android:layout_height="60dip"
+    android:background="@color/product_details_v1_price_container_background" >
+
+    <LinearLayout
+        android:id="@+id/linearlayout_price_holder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/button_create_it"
+        android:orientation="vertical"
+        android:paddingLeft="16dip"
+        android:paddingRight="8dip" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <print.io.view.TextViewFontNormal
+                android:id="@+id/textview_price_starting_at"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="none"
+                android:singleLine="true"
+                android:textColor="@color/product_details_v1_price_text_color"
+                android:textSize="@dimen/product_details_v1_price_text_size"
+                android:textStyle="bold" />
+
+            <ProgressBar
+                android:id="@+id/progressbar_price"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/text_size_large"
+                android:indeterminate="true"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <print.io.view.TextViewFontNormal
+            android:id="@+id/textview_retail_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="none"
+            android:singleLine="true"
+            android:textColor="@color/product_details_v1_retail_price_text_color"
+            android:textSize="@dimen/product_details_v1_retail_price_text_size" />
+
+        <ImageView
+            android:id="@+id/imageview_vendor_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dip"
+            android:adjustViewBounds="true"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/button_create_it"
+        android:layout_width="wrap_content"
+        android:layout_height="30dip"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        layout="@layout/item_button_create_it_v1" />
+
+</RelativeLayout>

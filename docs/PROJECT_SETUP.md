@@ -25,16 +25,16 @@ Select print.io SDK project -> Properties -> Android -> Make sure that "Is Libra
 Libraries will have to be added manually when developing with Eclipse  
 (In Android Studio, these dependencies are automatically resolved by Gradle dependency management mechanism).
 
-* 4.1 Gson library
+* 4.1 Required dependencies (Mandatory)
 
-	Download Gson library version 2.2.4 jar and add it to `libs` folder of print.io SDK project.
+	To make your life easer we have bundled these libraries together. You can download [this archive](https://www.dropbox.com/s/0r5837d3t20kab0/libs.zip?dl=1) and extract the files to the `libs` folder of the PrintIO SDK.
 
 * 4.2 Facebook SDK (This step is required only if you intend to use Facebook as a photo source)
 
-	If your project is not currently using Facebook SDK you will have to clone Facebook SDK version 4.2 for Android and import it into workspace. Then add Facebook SDK library to the print.io SDK library like so:
+	If your project is not currently using Facebook SDK you will have to clone Facebook SDK version 4.5 for Android and import it into workspace. Then add Facebook SDK library to the print.io SDK library like so:
 
 	Select print.io SDK project-> Properties -> Android -> Add... -> Choose Facebook SDK library
-  
+
 ####5. Add print.io SDK library to your project
 Select your project -> Properties -> Android -> Add... -> Choose printio SDK library
 
@@ -177,6 +177,9 @@ Please add following activities to your AndroidManifest.xml file:
 	android:name="print.io.ActivityHowItWorks"
 	android:screenOrientation="portrait" />
 <activity
+    android:name="print.io.ActivityQualityGuarantee"
+    android:screenOrientation="portrait" />
+<activity
 	android:name="com.facebook.FacebookActivity"
 	android:screenOrientation="portrait" />
 <activity
@@ -217,35 +220,6 @@ Please add following activities to your AndroidManifest.xml file:
 <meta-data
     android:name="com.facebook.sdk.ApplicationId"
     android:value="@string/facebook_app_id" />
-
-<service android:name="com.parse.PushService" />
-
-<receiver android:name="com.parse.ParseBroadcastReceiver" >
-    <intent-filter>
-        <action android:name="android.intent.action.BOOT_COMPLETED" />
-        <action android:name="android.intent.action.USER_PRESENT" />
-    </intent-filter>
-</receiver>
-<receiver
-    android:name="com.parse.GcmBroadcastReceiver"
-    android:permission="com.google.android.c2dm.permission.SEND" >
-    <intent-filter>
-        <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-        <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
-
-        <!-- IMPORTANT: Change "com.example.piosdkpoconcept" to match your app's package name. -->
-        <category android:name="com.example.piosdkpoconcept" />
-    </intent-filter>
-</receiver>
-<receiver
-    android:name="print.io.PushNotificationsReceiver"
-    android:exported="false" >
-    <intent-filter>
-
-        <!-- IMPORTANT: Change "com.example.piosdkpoconcept" to match your app's package name. -->
-        <action android:name="com.example.piosdkpoconcept.PUSH_NOTIFICATION" />
-    </intent-filter>
-</receiver>
 ```
 
 ###4. Application element
