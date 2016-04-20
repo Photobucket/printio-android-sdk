@@ -27,5 +27,8 @@
     <dimen name="cart_items_quantity_right_offset">0dip</dimen>
 
     <dimen name="customize_product_view_margins">8dip</dimen>
+
+    <!-- added by jayw - is it used?? -->
+    <dimen name="action_bar_item_padding">8dp</dimen>
 	
 </resources>
